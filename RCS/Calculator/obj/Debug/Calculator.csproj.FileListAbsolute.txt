@@ -1,0 +1,7 @@
+C:\code\RCS_c-_1\RCS\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\code\RCS_c-_1\RCS\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\code\RCS_c-_1\RCS\Calculator\bin\Debug\Calculator.exe.config
+C:\code\RCS_c-_1\RCS\Calculator\bin\Debug\Calculator.exe
+C:\code\RCS_c-_1\RCS\Calculator\bin\Debug\Calculator.pdb
+C:\code\RCS_c-_1\RCS\Calculator\obj\Debug\Calculator.exe
+C:\code\RCS_c-_1\RCS\Calculator\obj\Debug\Calculator.pdb
