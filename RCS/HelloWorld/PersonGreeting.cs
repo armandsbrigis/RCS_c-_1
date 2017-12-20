@@ -8,11 +8,13 @@ namespace HelloWorld
 {
     class PersonGreeting
     {
+        public string HelloText;
         public void SayHello()
+
         {
             string myName;
             myName = Console.ReadLine();
-            Console.WriteLine("Sveika, Pasaule " + myName);
+            Console.WriteLine(HelloText + myName);
 
         }
     }
