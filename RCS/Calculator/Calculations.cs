@@ -23,7 +23,7 @@ namespace Calculator
 
             if (success == false)
             {
-                Console.WriteLine("Sorry, you are stupid");
+                Console.WriteLine("Sorry, it is not number");
                 number = AskUserForNumber();
 
             }
