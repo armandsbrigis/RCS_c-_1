@@ -1,0 +1,7 @@
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\bin\Debug\atkartojam.exe.config
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\bin\Debug\atkartojam.exe
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\bin\Debug\atkartojam.pdb
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\obj\Debug\atkartojam.csprojResolveAssemblyReference.cache
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\obj\Debug\atkartojam.csproj.CoreCompileInputs.cache
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\obj\Debug\atkartojam.exe
+C:\Users\ArmandsBeCool\source\repos\atkartojam\atkartojam\obj\Debug\atkartojam.pdb

@@ -1,0 +1,7 @@
+C:\code\RCS_c-_1\RCS\Smarter Calculator\bin\Debug\Smarter Calculator.exe.config
+C:\code\RCS_c-_1\RCS\Smarter Calculator\bin\Debug\Smarter Calculator.exe
+C:\code\RCS_c-_1\RCS\Smarter Calculator\bin\Debug\Smarter Calculator.pdb
+C:\code\RCS_c-_1\RCS\Smarter Calculator\obj\Debug\Smarter Calculator.csprojResolveAssemblyReference.cache
+C:\code\RCS_c-_1\RCS\Smarter Calculator\obj\Debug\Smarter Calculator.csproj.CoreCompileInputs.cache
+C:\code\RCS_c-_1\RCS\Smarter Calculator\obj\Debug\Smarter Calculator.exe
+C:\code\RCS_c-_1\RCS\Smarter Calculator\obj\Debug\Smarter Calculator.pdb

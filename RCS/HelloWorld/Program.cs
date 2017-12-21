@@ -16,9 +16,9 @@ namespace HelloWorld
             greet.SayHello();
 
             PersonGreeting seaGreet;
-            greet = new PersonGreeting();
-            greet.HelloText = "Ahoy, world";
-            greet.SayHello();
+            seaGreet = new PersonGreeting();
+            seaGreet.HelloText = "Ahoy, world";
+            seaGreet.SayHello();
 
             Console.ReadLine();
         
