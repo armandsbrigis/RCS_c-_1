@@ -13,27 +13,26 @@ namespace Smarter_Calculator
 
             //izveidosim tātad eeemmmmm, kalkulatora objektu
 
-            //paprasit lieotājam ievadīt 
-            Console.WriteLine("please ender a job");
-            string input = Console.ReadLine();
-            int result;
-            int counter = 0;
-            while (counter < input.Lenght)
-            {
+            MathParser parser;
 
-                char symbol = input[counter];
-                if(symbol == '+')
-                {
-                    Console.WriteLine("plus");
-                }
-                else
-                {
-                    int number;
-                    number = Int32.Parse(symbol.ToString());
-                    Console.WriteLine("number" + number);
-                }
-                counter = counter + 1;
-            }
+            parser = new MathParser();
+
+            
+            //paprasit lieotājam ievadīt 
+
+        
+            Console.WriteLine("please ender a job");
+
+            string input = Console.ReadLine();
+
+            //izsauc aprēķināšanas funkciju un saglabāt rezultātu
+
+           int result = parser.ParseMath(input);
+
+            //izvada rezultātu uz ekrāna
+
+            Console.WriteLine("your result" + result);
+           
             Console.ReadLine();
 
 
