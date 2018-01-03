@@ -4,42 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smarter_Calculator
+namespace SmarterCalculator
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-            //izveidosim tātad eeemmmmm, kalkulatora objektu
-
+            // izveido kalkulatora objektu
             MathParser parser;
-
             parser = new MathParser();
 
-            
-            //paprasit lieotājam ievadīt 
-
-        
-            Console.WriteLine("please ender a job");
-
+            // paprasīt lietotājam ievadīt ievadi
+            Console.WriteLine("please enter darbība");
             string input = Console.ReadLine();
 
-            //izsauc aprēķināšanas funkciju un saglabāt rezultātu
+            // izsauc aprēķināšanas funkciju un saglabā rezultātu
+            int result = parser.ParseMath(input);
+            if (result == 0)
+            {
+                Console.WriteLine("operation unsucessful");
+            }
 
-           int result = parser.ParseMath(input);
-
-            //izvada rezultātu uz ekrāna
-
-            Console.WriteLine("your result" + result);
-           
+            // izvada rezultātu uz ekrāna
+            Console.WriteLine("your result " + result);
             Console.ReadLine();
-
-
-
-
-
-
         }
     }
 }

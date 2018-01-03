@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smarter_Calculator
+namespace SmarterCalculator
 {
     class MathParser
     {
-        //funkcija kas saņem lietotāja ievadītu tekstu
-        //un saparsē to, veic matemātiskās darbības
-        //un atgriežas rezultātu
+        // funkcija, kas saņem lietotāja ievadītu tekstu
+        // un saparsē to, veic matematiskās darbības,
+        // un atgriež rezultātu
         public int ParseMath(string input)
         {
-            int result;
-            //
+            // "16+5-4" skaits ir 5 pēdējā simbola pozīcija ir 4
+            // "1a" skaits ir 2 pēdējā pozīcija ir 1
+            // izveido mainīgo, kurā saglabā ievadīto ciparu tekstu
             string firstEnteredNumber = "";
             string secondEnteredNumber = "";
             char enteredOperation = ' ';
@@ -22,27 +23,45 @@ namespace Smarter_Calculator
             int counter = 0;
             while (counter < input.Length)
             {
-
                 char symbol = input[counter];
-                if (symbol == '+')
+                if (symbol == '+'|| symbol == '-')
                 {
-                    //saglabā operāciju mainīgā
-                    //ieliek karodziņu, ka kad tiks pabeigts
-                    //ielasīt nākošo skaitli, operācija jāizpilda
+                    // saglabā operāciju mainīgajā,
+                    enteredOperation = symbol;
+                    // ieliek karodziņu, ka kad tiks pabeigts
+                    // ielasīt nākošo skaitli, operācija ir jāizpilda
                     operationFound = true;
                 }
                 else
                 {
+                    // kad cipars ir atrasts,
+                    // ja operācija vēl nav bijusi, tad ierakstām vērtību
                     if (operationFound == false)
                     {
-
-
+                        // pirmajā skaitlī,
+                        firstEnteredNumber = firstEnteredNumber + symbol;
                     }
-                    firstEnteredNumber = firstEnteredNumber + symbol;
+                    else
+                    {
+                        // ja operācija ir bijusi,
+                        // ierakstām vērtību otrajā skaitlī
+                        secondEnteredNumber = secondEnteredNumber + symbol;
+                    }
                 }
-                counter = counter + 1;
-            }
-        }
 
+                counter = counter + 1;
+
+                // ja iepriekšējā ciklā ir atrasta operācija,
+                if (operationFound == true && counter == input.Length)
+                {
+                    // tad jāveic šī operācija
+                    int result = Int32.Parse(firstEnteredNumber) - Int32.Parse(secondEnteredNumber);
+                    return result;
+                }
+            }
+
+            Console.WriteLine("bad input");
+            return 0;
+        }
     }
 }
